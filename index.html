@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>G.T.B-Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #84a6ee;
+        }
+
+        header {
+            background-color: maroon;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            position: relative; /* Add this */
+        }
+
+        .header-content h1 {
+            font-size: 2.5rem;
+        }
+
+        /* Add styles for the round profile picture */
+        .profile-picture {
+            width: 100px; /* Adjust the size as needed */
+            height: 100px;
+            border-radius: 75%; /* Create a circular shape */
+            object-fit: cover; /* To ensure the image fills the circular area */
+            position: absolute; /* Add this */
+            top: 75px; /* Adjust top position as needed */
+            left: 75px; /* Adjust left position as needed */
+        }
+
+        nav {
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .section-content {
+            background-color: #fff;
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+        }
+
+        .download-button {
+            background-color: #333;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 10px;
+            align-self: center;
+        }
+
+        .download-button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #333;
+            color: #fff;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <!-- Add your profile picture here -->
+            <img src="5.jpg" alt="Your Profile Picture" class="profile-picture">
+            <h1>G.T.BAKYARAJ</h1>
+            <p>A Professional Trainer</p></p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#education">My Education</a></li>
+            <li><a href="#skills">My Skills</a></li>
+            <li><a href="#projects">My Projects</a></li>
+            <li><a href="#resume">My CV</a></li>
+           
+        </ul>
+    </nav>
+
+    <section id="about">
+        <div class="section-content">
+            <h2>About Me</h2>
+            <p>   Here's a brief introduction about myself: "Highly accomplished IT professional with 18 years of combined experience in academia and industry. With 12 years of academic expertise, has established a strong foundation in computer science and education. Complementing this, possesses 6 years of industrial experience in the IT sector, having worked on various projects and technologies. This unique blend of academic and industrial expertise enables to bring a comprehensive and practical approach to IT solutions, making a valuable asset in the field."</p>
+        
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="section-content">
+            <h2>Education</h2>
+            <p>AM Jain College-University of Madras - B.Com</p>
+                <p>Panimalar Engineering College-University of Madras - MCA</p>
+                
+                    <p>University of Madras-Distance Mode - MBA</p>
+            
+            <p>Pondycherri University - MFT</p>
+            
+ 
+            </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-content">
+            <h2>My Skills</h2>
+            <ul>
+                <li>C</li>
+                <li>Java</li>
+                <li>C++</li>
+                <li>Python</li>
+                <li>Oracle</li>
+                <li>Linux</li>
+                <li>PowerBI</li>
+                <li>MySql</li>
+                
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-content">
+            <h2>My Projects</h2>
+            <ul>
+                <li><a href="#"></a> HRIS  </li>
+                <li><a href="#"> </a>collegemgt</li>
+                <li><a href="#">chatbot</a></li>
+                <li><a href="#"></a></li> 
+                <!-- Add more project links here -->
+            </ul>
+        </div>
+    </section>
+
+    <section id="resume">
+    
+        <div class="section-content">
+            <center>
+            <h2>Resume</h2>
+            <a href="./mycv.pdf" target="_blank" class="download-button">Download CV</a>
+        </center>
+        </div>
+        
+    </section>
+
+    <footer>
+        <p>&copy; All rights reserved. G.T.BAKYARAJ 2025</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling to section when clicking on navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
